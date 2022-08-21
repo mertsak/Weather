@@ -15,6 +15,5 @@
 :point_right: Redux Toolkit <br />
 :point_right: Sass <br />
 :point_right: Axios <br />
-:point_right: Tailwind CSS <br />
 :point_right: Moment.js <br />
 :point_right: React-Icons <br />
