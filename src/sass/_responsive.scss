@@ -1,0 +1,42 @@
+@media only screen and (max-width: 1500px) {
+  .app_con {
+    flex-direction: column;
+
+    .side__bar {
+      width: 100%;
+      height: inherit;
+    }
+
+    .dailycard__con {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+
+  input {
+    width: 500px;
+  }
+
+  .img__box {
+    width: 300px !important;
+    height: 225px !important;
+  }
+  .side__bar .weather__city__img{
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .daily__highlights__box {
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: inherit;
+  }
+
+  .img__box {
+    width: 225px !important;
+    height: 150px !important;
+  }
+}
