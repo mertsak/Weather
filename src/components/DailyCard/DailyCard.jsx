@@ -1,8 +1,7 @@
 import React from "react";
 
 const DailyCard = ({ daily }) => {
-
-  console.log(daily)
+  
   return (
     <>
       <div className="city__con">

@@ -27,9 +27,9 @@ html {
       background-color: $--content-in-light;
 
       form {
-        box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
         border-radius: 1rem;
-        margin: 0 .3rem;
+        margin: 0 0.3rem;
       }
 
       .search__icon,
@@ -65,4 +65,11 @@ html {
       }
     }
   }
+}
+
+.error__text {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: red;
+  letter-spacing: 1px;
 }

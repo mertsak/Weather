@@ -24,20 +24,20 @@ export const weatherSlice = createSlice({
       state.loading = false;
     },
     [fetchGetCity.rejected]: (state) => {
-      state.loading = false;
       state.error = true;
+      state.loading = false;
     },
     [fetchWeatherData.pending]: (state) => {
-      state.loading = true;
       state.error = false;
+      state.loading = true;
     },
     [fetchWeatherData.fulfilled]: (state, action) => {
       state.getCityData = action.payload.list;
       state.loading = false;
     },
     [fetchWeatherData.rejected]: (state) => {
-      state.loading = false;
       state.error = true;
+      state.loading = false;
     },
   },
 });

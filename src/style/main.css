@@ -118,7 +118,7 @@ html.dark .side__bar {
   html.dark .side__bar form {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
     border-radius: 1rem;
-    margin: 0 .3rem; }
+    margin: 0 0.3rem; }
   html.dark .side__bar .search__icon,
   html.dark .side__bar .location__icon {
     color: black; }
@@ -141,6 +141,12 @@ html.dark .daily__highlights__con {
   color: black; }
   html.dark .daily__highlights__con .highlights__item {
     background-color: #ffffff !important; }
+
+.error__text {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: red;
+  letter-spacing: 1px; }
 
 .search__con {
   display: flex;
@@ -234,3 +240,85 @@ html.dark .daily__highlights__con {
   padding: 1.5rem;
   text-align: center;
   border-radius: 0.8rem; }
+
+.overlay {
+  height: 100vh !important;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .overlay .loading-text {
+    position: absolute;
+    color: white;
+    z-index: 10;
+    font-size: 35px;
+    left: 50%;
+    bottom: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -100%);
+    text-transform: capitalize; }
+
+.planet {
+  display: block;
+  width: 125px !important;
+  height: 125px;
+  position: relative;
+  transform-style: preserve-3d;
+  border-radius: 50%;
+  background: #fcc96b;
+  background: #fcc96b;
+  background: linear-gradient(180deg, #fcc96b 0%, #fcc96b 15%, #f7ae01 15%, #f7ae01 19%, #fcc96b 19%, #fcc96b 22%, #f7ae01 22%, #f7ae01 28%, #fcc96b 28%, #fcc96b 31%, #fcc96b 33%, #fcc96b 36%, #f7ae01 36%, #f7ae01 48%, #fcc96b 48%, #fcc96b 55%, #f7ae01 55%, #f7ae01 66%, #fcc96b 66%, #fcc96b 70%, #f7ae01 70%, #f7ae01 73%, #fcc96b 73%, #fcc96b 82%, #f7ae01 82%, #f7ae01 86%, #fcc96b 86%);
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.25), inset 8px -4px 6px rgba(199, 128, 0, 0.5), inset -8px 4px 8px rgba(255, 235, 199, 0.5), inset 20px -5px 12px #f7ae01, 0 0 100px rgba(255, 255, 255, 0.35);
+  transform: rotateZ(-15deg); }
+  .planet::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 16px solid #7b6f42;
+    border-top-width: 0;
+    border-radius: 50%;
+    box-shadow: 0 -2px 0 #b1a693;
+    animation: rings1 0.8s infinite linear; }
+  .planet::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 8px solid #b1a693;
+    border-top-width: 0;
+    border-radius: 50%;
+    box-shadow: 0 -2px 0 #7b6f42;
+    animation: rings2 0.8s infinite linear; }
+
+@keyframes rings1 {
+  0% {
+    transform: rotateX(65deg) rotateZ(0deg) scale(1.75); }
+  100% {
+    transform: rotateX(65deg) rotateZ(360deg) scale(1.75); } }
+
+@keyframes rings2 {
+  0% {
+    transform: rotateX(65deg) rotateZ(0deg) scale(1.7); }
+  100% {
+    transform: rotateX(65deg) rotateZ(360deg) scale(1.7); } }
+
+@media only screen and (max-width: 768px) {
+  .overlay {
+    height: 100vh !important;
+    width: 750px; }
+    .overlay .loading-text {
+      bottom: 52%; } }
+
+@media only screen and (max-width: 600px) {
+  .overlay {
+    height: 100vh !important;
+    width: inherit !important; }
+    .overlay .loading-text {
+      font-size: 1.2rem;
+      bottom: 58%; } }

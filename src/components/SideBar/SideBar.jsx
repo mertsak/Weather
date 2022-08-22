@@ -1,6 +1,7 @@
 import React from "react";
 
 import Search from "../Search/Search";
+import Error from "../Error/Error";
 
 // REACT İCONS
 import { BsThermometerSun } from "react-icons/bs";
@@ -15,6 +16,7 @@ import moment from "moment";
 const SideBar = () => {
   const getCityData = useSelector((state) => state.weather.getCityData);
   const getCityName = useSelector((state) => state.weather.getCityName);
+  const error = useSelector((state) => state.weather.error);
 
   const Icon = getCityData[0].weather[0].icon;
   const temp = getCityData[0].main.temp;
@@ -26,6 +28,7 @@ const SideBar = () => {
       <div className="search__con">
         <Search></Search>
       </div>
+      <div className="error__text">{error && <Error></Error>}</div>
 
       <div className="weather__img">
         <img src={require(`../../assets/weatherPhoto/${Icon}.png`)} alt="" />
@@ -57,8 +60,6 @@ const SideBar = () => {
       </div>
 
       <div className="weather__city__img">
-        <div className="overlay"></div>
-
         <div className="img__box">
           <img
             src={require(`../../assets/CountyPhoto/photo${Math.floor(
