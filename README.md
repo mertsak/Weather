@@ -17,3 +17,7 @@
 :point_right: Axios <br />
 :point_right: Moment.js <br />
 :point_right: React-Icons <br />
+
+
+![Screenshot_1](https://user-images.githubusercontent.com/63242329/185807191-df56753b-0e2d-42ac-8f8f-12d70e70a409.png)
+![Screenshot_2](https://user-images.githubusercontent.com/63242329/185807199-f0fcabfe-a4e1-468b-a24f-f52b52fe9406.png)
