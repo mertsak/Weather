@@ -7,6 +7,7 @@
 :heavy_check_mark: Today and daily weather information <br />
 :heavy_check_mark: State management with Redux & Redux Toolkit <br />
 :heavy_check_mark: Get weather information of your location <br />
+:heavy_check_mark: Responsive <br />
 
 ## :fire: Technologies and Libraries
 
